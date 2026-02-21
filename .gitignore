@@ -1,0 +1,17 @@
+*
+/*
+
+!flake.nix
+!.gitignore
+!LuessModel.py
+!main.py
+!setup.sh
+!pgnextract.py
+!ChessPositionWriter.py 
+!PgnLoader.py
+!ChessPositionDataset.py
+
+!distilled_stockfish
+!distilled_stockfish/StockfishLabeler.py
+!distilled_stockfish/train.py
+!distilled_stockfish/WinProbLoss.py
