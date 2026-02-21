@@ -1,5 +1,6 @@
 #/usr/bin/env bash
 mkdir tmp
+mkdir -p data
 cd tmp
 kaggle datasets files chessmontdb/chessmont-big-dataset
 kaggle datasets download chessmontdb/chessmont-big-dataset -f twic.pgn.zst --force 
