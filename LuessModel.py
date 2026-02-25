@@ -34,7 +34,7 @@ class LuessModel(nn.Module):
         super().__init__()
 
         self.input_conv = nn.Sequential(
-            nn.Conv2d(19,num_filters, kernel_size=3, padding=1, bias=False),
+            nn.Conv2d(18,num_filters, kernel_size=3, padding=1, bias=False),
             nn.BatchNorm2d(num_filters),
             nn.LeakyReLU()
         )

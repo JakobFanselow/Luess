@@ -39,8 +39,8 @@
                 python3Packages.pandas
                 python3Packages.matplotlib
                 python3Packages.scipy
-                python3Packages.torch
-                python3Packages.torchvision
+                #python3Packages.torch
+                #python3Packages.torchvision
                 python3Packages.tqdm
                 python3Packages.torchmetrics
                 python3Packages.mlxtend
@@ -49,6 +49,8 @@
                 python3Packages.kagglehub
                 python3Packages.h5py
                 python3Packages.wandb
+                python3Packages.requests 
+                python3Packages.zstandard
             ] ++ (if stdenv.hostPlatform.system == "aarch64-darwin" then [ ] else [
               
             ]);
@@ -57,6 +59,7 @@
               python -m venv .venv
               source .venv/bin/activate
               pip install stockfish
+              pip install torch
             '';
           };
       });

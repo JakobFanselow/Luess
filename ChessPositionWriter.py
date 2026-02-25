@@ -26,7 +26,7 @@ class ChessPositionWriter:
             return
         with h5py.File(self.file_path,'a') as f:
             if 'positions' not in f:
-                positions_array = np.array(self.bitposition_buffer)  # shape (N, 15)
+                positions_array = np.array(self.bitposition_buffer)  
                 f.create_dataset(
                     'positions',
                     data=positions_array,

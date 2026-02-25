@@ -15,3 +15,5 @@
 !distilled_stockfish/StockfishLabeler.py
 !distilled_stockfish/train.py
 !distilled_stockfish/WinProbLoss.py
+!distilled_stockfish/model_test.py
+!distilled_stockfish/eval_downloader.py
